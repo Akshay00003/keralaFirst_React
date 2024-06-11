@@ -1,0 +1,89 @@
+@import "../../App.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  z-index: 99;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    .left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 7px;
+      flex: 1;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      span {
+        font-size: 20px;
+        font-weight: 700;
+        transition: all 300ms ease;
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      color:gray;
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        color: gray;
+        transition: all 300ms ease;
+      }
+      a:hover {
+        color: blue;
+      }
+      @include md {
+        z-index: 99;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        flex-direction: column;
+        font-weight: 500;
+        padding: 30px;
+        border-radius: 10px 10px 20px grey;
+        transition: all 300ms ease;
+      }
+    }
+    .menu-icon {
+      .icon {
+        display: none;
+        @include md {
+          display: block;
+        }
+      }
+      // display: none;
+      .bt {
+        width: 80px;
+        height: 35px;
+        background: black;
+        color: white;
+        border: none;
+        margin-left: 20px;
+        border-radius: 4px;
+        @include md {
+          display: block;
+        }
+      }
+      @include md {
+        display: flex;
+        gap: 7px;
+        cursor: pointer;
+      }
+    }
+  }
+}

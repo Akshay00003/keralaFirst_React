@@ -1,0 +1,55 @@
+@import "../../App.scss";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  .wrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto auto;
+    .item {
+      display: flex;
+      width: 450px;
+      height: 250px;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 8px;
+      margin-left: 10px;
+      gap: 15px;
+      padding: 25px;
+      background: rgb(231, 247, 250);
+      .head {
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 0.7px;
+        background: rgb(231, 247, 250);
+      }
+      .desc {
+        color: gray;
+        background: rgb(231, 247, 250);
+        font-weight: 500;
+        letter-spacing: 0.7px;
+      }
+      .icon1 {
+        color: blue;
+        background: rgb(231, 247, 250);
+      }
+      .icon2 {
+        color: green;
+        background: rgb(231, 247, 250);
+      }
+      .icon3 {
+        color: blueviolet;
+        background: rgb(231, 247, 250);
+      }
+      .icon4{
+        color: green;
+        background: rgb(231, 247, 250);
+      }
+    }
+  }
+}

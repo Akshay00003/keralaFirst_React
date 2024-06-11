@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+}
+
+.container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .left p {
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.container .left p span {
+  color: gray;
+}
+.container .left img {
+  border-radius: 8px;
+  width: 500px;
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .container .left img {
+    width: 100%;
+    height: 200px;
+  }
+}
+.container .right {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  width: 50vw;
+}
+.container .right .wrapper {
+  display: flex;
+  margin-top: -30px;
+}
+.container .right .wrapper .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.container .right .wrapper .article .menu {
+  width: 50px;
+  height: 50px;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 0px 3px;
+}
+.container .right .wrapper .article .para {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+}
+.container .right .wrapper .article .para .p1 {
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.container .right .wrapper .article .para .p2 {
+  color: grey;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}/*# sourceMappingURL=Aerticle.css.map */

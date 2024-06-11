@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.container .left1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+}
+.container .left1 .head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.container .left1 .head .p-1 {
+  font-weight: 900;
+  font-size: 40px;
+}
+.container .left1 .head .p-2 {
+  font-weight: 900;
+  font-size: 40px;
+}
+.container .left1 .head .p-3 {
+  color: gray;
+  font-weight: 500;
+  font-size: 14px;
+}
+.container .right1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+}
+.container .right1 img {
+  width: 600px;
+  height: 700px;
+  border-radius: 8px;
+}/*# sourceMappingURL=Review.css.map */
